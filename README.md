@@ -1,5 +1,5 @@
 # LEDController
-
+### Current Version: Alpha 0.1.0
 LEDController is a software / web interface dedicated to controlling LED's through a simplistic, modern interface.
 
 
@@ -8,7 +8,5 @@ LEDController is a software / web interface dedicated to controlling LED's throu
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Alpha 0.1.x   | :white_check_mark: |
+| < Alpha 0.1.0   | :x:                |
