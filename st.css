@@ -1,0 +1,22 @@
+html {
+	background-color: #d55eff;
+}
+.logo {
+	color: white;
+	
+}
+.top {
+	text-align: center;
+	color: white;
+	opacity: 20%;
+	font-size: 4em;
+	height: 300px;
+}
+.car {
+	vertical-align: center;
+}
+.textbottom {
+    text-align: center;
+	color: white;
+	height: 2000px;
+}
