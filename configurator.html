@@ -1,0 +1,49 @@
+<script>//https://codepen.io/interactive/pen/iaEbK</script>
+<html>
+<link rel="stylesheet" href="configurator.css">
+<title> Omnicron Software Configurator </title>
+<div class="front">
+    CONFIGURATOR
+</div>
+<div class="color">
+    <canvas id = "color">
+    </canvas>
+  <p>
+  <input type = "button" class="btn" value = "Change Color" onclick = "changecolor()">
+  <input type = "color" value = "#000000" id = "clr" onchange = "docolor()">
+    <input type = "range" min = "10" max = "100" value = "10" id = "soft" oninput = "dosquare()">
+    </p>
+    <style type="text/css">
+    #color {
+    width: 200pt;
+    height: 50pt;
+    border: 2px solid #fff;
+  }
+  .btn{padding: 10px; color: #fff;background:#000;cursor: pointer;}
+  .yellowback {
+    background-color: yellow;
+  }
+    </style>
+    <script type="text/javascript">
+      function changecolor() {
+    var cc1 = document.getElementById("color");
+    cc1.style.backgroundColor = "#ff3399";
+  }
+  function docolor() {
+    var cc1 = document.getElementById("color");
+    var colorinput = document.getElementById("clr");
+    var pickcol = colorinput.value;
+    cc1.style.backgroundColor = pickcol;
+  }
+  function dosquare() {
+    var cc1 = document.getElementById("color");
+    var rangeinput = document.getElementById("soft");
+    var sizesoft = rangeinput.value;
+    var ctx = cc1.getContext("2d");
+    ctx.clearRect(0, 0, cc1.width, cc1.height);
+    ctx.fillStyle = "pink";
+    ctx.fillRect(0, 0, sizesoft, sizesoft);
+  }
+    </script>
+</div>
+</html>
