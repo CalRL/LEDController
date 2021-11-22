@@ -10,4 +10,4 @@ LEDController is a software / web interface dedicated to controlling LED's throu
 | < Alpha 0.1.0   | :x:                |
 
 
-2021 © Omikron Software
+## 2021 © Omikron Software
