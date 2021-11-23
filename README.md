@@ -1,5 +1,3 @@
-[![PRs Welcome][prs-badge]][prs]
-
 
 # LEDController
 ### Current Version: Alpha 0.1.0
