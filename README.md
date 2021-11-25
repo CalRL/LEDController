@@ -1,5 +1,6 @@
 
-# [LEDController](https://github.com/CalRL/LEDController) &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request) [![Maintainance](https://img.shields.io/maintenance/yes/2021](https://github.com/CalRL/LEDController)
+# [LEDController](https://github.com/CalRL/LEDController) &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request) [![Maintenance](https://img.shields.io/maintenance/yes/2021?color=green&label=Maintained)](https://github.com/CalRL/LEDController/)
+
 ### Current Version: Alpha 0.1.0
 LEDController is a web interface dedicated to controlling LED's through a simplistic, modern interface.
 
