@@ -9,13 +9,97 @@
 	font-family: "Montserrat", sans-serif;
 }
 html {
-    background-color: #621569;
+    background: linear-gradient(135deg, #621569 60%, cyan);
 }
 .front {
+    color: transparent;
+    position: absolue;
+	text-shadow: 
+	0px 0px 1px rgb(167,167,167),
+	0px 1px 1px rgb(167,167,167),
+	0px 2px 1px rgb(167,167,167);
+    border: 4px solid;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    animation: rgb 3s linear infinite;
+    margin-left: 700px;
+    margin-right: 700px;
+}
+@keyframes rgb {
+        10% { border: 4px solid rgba(11,124,199,0.5);}
+        20% { border: 4px solid rgba(168,11,199,0.5);}
+        40% { border: 4px solid rgba(11,199,96,0.5);}
+        60% { border: 4px solid rgba(199,11,11,0.5);}
+        80% { border: 4px solid rgba(199,96,11,0.5);}
+      }
+.front2 {
     text-align: center;
     color: white;
     font-size: 4em;
 }
+.led{
+    border: 6px solid white;
+    color: #621569;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 70px;
+}
+.led1 {
+   border: 2px solid white;
+   margin-left: 15px;
+   margin-top: 18px;
+   margin-right: 1780px;
+   float: right;
+}
+.led2 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led3 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led4 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led5 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led6 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led7 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .led8 {
+    border: 2px solid white;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-right: 1820px;
+ }
+ .color {
+     margin-left: 800px;
+     margin-top: 100px;
+ }
     #color {
     width: 200pt;
     height: 50pt;
@@ -25,3 +109,9 @@ html {
   .yellowback {
     background-color: yellow;
   }
+.row {
+    margin-left: 800px;
+}
+.re {
+    margin-left: 7px;
+}
