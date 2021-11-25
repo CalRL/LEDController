@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/021a64994d29462bb5c7e80310a3a47a)](https://app.codacy.com/gh/CalRL/LEDController?utm_source=github.com&utm_medium=referral&utm_content=CalRL/LEDController&utm_campaign=Badge_Grade_Settings)
 # [LEDController](https://github.com/CalRL/LEDController) &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request) [![Maintenance](https://img.shields.io/maintenance/yes/2021?label=Maintained)](https://github.com/CalRL/LEDController/) [![Dev State](https://img.shields.io/badge/Development%20state-Alpha-crimson)](https://github.com/CalRL/LEDController)
 
 ## Current Version: Alpha 0.1.0
