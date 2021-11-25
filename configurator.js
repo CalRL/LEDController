@@ -1,4 +1,3 @@
- /*
   function changecolor() {
     var cc1 = document.getElementById("color");
     cc1.style.backgroundColor = "#ff3399";
@@ -18,4 +17,3 @@
     ctx.fillStyle = "pink";
     ctx.fillRect(0, 0, sizesoft, sizesoft);
   }
-*/
