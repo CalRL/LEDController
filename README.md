@@ -1,5 +1,5 @@
 
-# LEDController
+# [LEDController](https://github.com/CalRL/LEDController) &middot [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)] [![Maintainance](https://img.shields.io/maintenance/yes/2021]
 ### Current Version: Alpha 0.1.0
 LEDController is a web interface dedicated to controlling LED's through a simplistic, modern interface.
 
