@@ -11,8 +11,7 @@
 
 html {
   background:
-    linear-gradient(
-      135deg, 
+    linear-gradient(135deg,
       #621569 60%,
       cyan
     );
@@ -21,7 +20,7 @@ html {
 .front {
   color: transparent;
   position: absolue;
-  text-shadow: 
+  text-shadow:
   0px 0px 1px rgb(167, 167, 167),
   0px 1px 1px rgb(167, 167, 167),
   0px 2px 1px rgb(167, 167, 167);
