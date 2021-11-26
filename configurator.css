@@ -12,15 +12,14 @@
 html {
   background:
     linear-gradient(
-      135deg,
-      #621569 60%,
-      cyan
+      180deg,
+      #621569 30%,
+      rgb(255, 155, 255)
     );
 }
 
 .front {
   color: transparent;
-  position: absolue;
   text-shadow:
     0 0 1px rgb(167, 167, 167),
     0 1px 1px rgb(167, 167, 167),
@@ -52,68 +51,77 @@ html {
   color: #621569;
   margin: 20px 20px 50px 50px;
   height: 70px;
+  width: 80%;
+  text-align: center;
 }
 
 .led1 {
   border: 2px solid white;
-  margin-left: 15px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1780px;
-  float: right;
+  float: left;
+  width: 1.8%;
 }
 
 .led2 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led3 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led4 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led5 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led6 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led7 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .led8 {
   border: 2px solid white;
-  margin-left: 20px;
+  margin-left: 2%;
   margin-top: 18px;
-  margin-right: 1820px;
+  float: left;
+  width: 1.8%;
 }
 
 .color {
-  margin-left: 800px;
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 #color {

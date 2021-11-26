@@ -38,27 +38,32 @@
     <canvas id = "color">
     </canvas>
   <p>
-  <input type = "button" class="btn" value = "Change Color" onclick = "changecolor()">
+  <input type = "button" class="btn" value = "Reset" onclick = "changecolor()">
+  <br>
   <input type = "color" value = "#000000" id = "clr" onchange = "docolor()">
-    <input type = "range" min = "10" max = "100" value = "10" id = "soft" oninput = "dosquare()">
     </p>
 <link rel="StyleSheet" href="configurator.css" type="text/css"/>
-<script type="text/javascript" src="configurator.js"></script>
-</div>
-<div class="row">
-  <label for="display">display: </label>
-  <select id="display">
-    <option value="flex">led</option>
-    <option value="grid">grid</option>
-  </select>
-</div>
-<div class="re">
-<div class="row">
-  <label for="values">color </label>
-  <select id="values">
-    <option value="blue">blue</option>
-    <option value="green">green</option>
-    <option value="red">red</option>
-  </select>
+<script type="text/javascript">
+  function changecolor() {
+    var cc1 = document.getElementById("color");
+    cc1.style.backgroundColor = "";
+  }
+  function docolor() {
+    var cc1 = document.getElementById("color");
+    var colorinput = document.getElementById("clr");
+    var pickcol = colorinput.value;
+    cc1.style.backgroundColor = pickcol;
+  }
+  function dosquare() {
+    var cc1 = document.getElementById("color");
+    var rangeinput = document.getElementById("soft");
+    var sizesoft = rangeinput.value;
+    var ctx = cc1.getContext("2d");
+    var colorinput = document.getElementById("clr");
+    ctx.clearRect(0, 0, cc1.width, cc1.height);
+    ctx.fillStyle = colorinput.value;
+    ctx.fillRect(0, 0, sizesoft, sizesoft);
+  }
+</script>
 </div>
 </html>
