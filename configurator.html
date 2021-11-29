@@ -1,69 +1,92 @@
 <html>
-<div class="front">
-    CONFIGURATOR
-</div>
-<div class="front2">
-  CHOOSE YOUR CONFIG
-</div>
+
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+    <link rel="StyleSheet" href="configurator.css" type="text/css"/>
+  </head>
+  <body>
+    
+      <div class="front2">
+      CHOOSE YOUR CONFIG
+    </div>
 <br>
-<br>
-<div class="led">
-  <div class="led1">
-  a
-</div>
-<div class="led2">
-  a
-</div>
-<div class="led3">
-  a
-</div>
-<div class="led4">
-  a
-</div>
-<div class="led5">
-  a
-</div>
-<div class="led6">
-  a
-</div>
-<div class="led7">
-  a
-</div>
-<div class="led8">
-  a
-</div>
-  a
-</div>
-<div class="color">
-    <canvas id = "color">
-    </canvas>
-  <p>
-  <input type = "button" class="btn" value = "Reset" onclick = "changecolor()">
-  <br>
-  <input type = "color" value = "#000000" id = "clr" onchange = "docolor()">
-    </p>
-<link rel="StyleSheet" href="configurator.css" type="text/css"/>
-<script type="text/javascript">
-  function changecolor() {
-    var cc1 = document.getElementById("color");
-    cc1.style.backgroundColor = "";
-  }
-  function docolor() {
-    var cc1 = document.getElementById("color");
-    var colorinput = document.getElementById("clr");
-    var pickcol = colorinput.value;
-    cc1.style.backgroundColor = pickcol;
-  }
-  function dosquare() {
-    var cc1 = document.getElementById("color");
-    var rangeinput = document.getElementById("soft");
-    var sizesoft = rangeinput.value;
-    var ctx = cc1.getContext("2d");
-    var colorinput = document.getElementById("clr");
-    ctx.clearRect(0, 0, cc1.width, cc1.height);
-    ctx.fillStyle = colorinput.value;
-    ctx.fillRect(0, 0, sizesoft, sizesoft);
-  }
-</script>
-</div>
+    <ul>
+      <li>Front</li>
+      <li>Left</li>
+      <li>Right</li>
+      <li>Rear</li>
+    </ul>
+
+    <br>
+    <br>
+    <div class="led">
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+
+    <input type = "color" value = "#000000" class = "led1" onchange = "docolor()">
+    </div>
+    <div class="color">
+      <canvas id = "color">
+      </canvas>
+    <p>
+    <input type = "button" class="btn" value = "Reset" onclick = "changecolor()">
+    <br>
+    <input type = "color" value = "#000000" id = "clr" onchange = "changeall_And_Docolor()">
+      </p>
+    <script type="text/javascript">
+
+    const cc1 = document.getElementById("color");
+    function changeall(cc1, colorinput, pickcol) {
+      var colorinput = document.getElementById("clr");
+      var pickcol = colorinput.value;
+      console.log("changeall");
+      $(".led1").val(pickcol)
+    }
+
+    function changecolor() {
+      cc1.style.backgroundColor = "";
+      var colorinput = document.getElementById("clr");
+      var pickcol = colorinput.value;
+      console.log("changeall");
+      $(".led1").val("#000000")
+      $(".clr").val("#000000")
+    }
+    function docolor() {
+      console.log("dcolor");
+      var colorinput = document.getElementById("clr");
+      var pickcol = colorinput.value;
+      cc1.style.backgroundColor = pickcol;
+    }
+    function dosquare() {
+      var rangeinput = document.getElementById("soft");
+      var sizesoft = rangeinput.value;
+      var ctx = cc1.getContext("2d");
+      var colorinput = document.getElementById("clr");
+      ctx.clearRect(0, 0, cc1.width, cc1.height);
+      ctx.fillStyle = colorinput.value;
+      ctx.fillRect(0, 0, sizesoft, sizesoft);
+    }
+
+    function changeall_And_Docolor(){
+      docolor();
+      changeall();
+
+    }
+
+    </script>
+
+    </div>
+  </body>
+
 </html>

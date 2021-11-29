@@ -13,31 +13,9 @@ html {
   background:
     linear-gradient(
       180deg,
-      #621569 30%,
+      #7D8AD5 30%,
       rgb(255, 155, 255)
     );
-}
-
-.front {
-  color: transparent;
-  text-shadow:
-    0 0 1px rgb(167, 167, 167),
-    0 1px 1px rgb(167, 167, 167),
-    0 2px 1px rgb(167, 167, 167);
-  border: 4px solid;
-  text-align: center;
-  font-size: 2em;
-  animation: rgb 3s linear infinite;
-  margin-left: 700px;
-  margin-right: 700px;
-}
-
-@keyframes rgb {
-  10% { border: 4px solid rgba(11, 124, 199, 0.5); }
-  20% { border: 4px solid rgba(168, 11, 199, 0.5); }
-  40% { border: 4px solid rgba(11, 199, 96, 0.5); }
-  60% { border: 4px solid rgba(199, 11, 11, 0.5); }
-  80% { border: 4px solid rgba(199, 96, 11, 0.5); }
 }
 
 .front2 {
@@ -46,8 +24,30 @@ html {
   font-size: 4em;
 }
 
+ul {
+  align-items: center;
+}
+
+li {
+  float:left;
+  list-style-type: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-right:groove 1px #FFFFFF;
+}
+
+li:active {
+  background: #eee;
+  box-shadow: inset 0 1px 1px #666;
+}
+
+li:after {
+  background: #eee;
+  box-shadow: inset 0 1px 1px #666;
+}
+
 .led {
-  border: 6px solid white;
+  border: 4px solid white;
   color: #621569;
   margin: 20px 20px 50px 50px;
   height: 70px;
@@ -55,69 +55,16 @@ html {
   text-align: center;
 }
 
-.led1 {
+.led1 > * {
   border: 2px solid white;
+  transform: translateY(5%);
   margin-left: 2%;
   margin-top: 18px;
+  margin-right: 10%;
   float: left;
   width: 1.8%;
 }
 
-.led2 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led3 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led4 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led5 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led6 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led7 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
-
-.led8 {
-  border: 2px solid white;
-  margin-left: 2%;
-  margin-top: 18px;
-  float: left;
-  width: 1.8%;
-}
 
 .color {
   display: flex;
@@ -127,7 +74,7 @@ html {
 #color {
   width: 200pt;
   height: 50pt;
-  border: 2px solid #fff;
+  border: 4px solid #fff;
 }
 
 .btn {
