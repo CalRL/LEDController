@@ -13,7 +13,7 @@ html {
   background:
     linear-gradient(
       180deg,
-      #7D8AD5 30%,
+      #7d8Aad5 30%,
       rgb(255, 155, 255)
     );
 }
@@ -29,11 +29,11 @@ ul {
 }
 
 li {
-  float:left;
+  float: left;
   list-style-type: none;
   padding-left: 25px;
   padding-right: 25px;
-  border-right:groove 1px #FFFFFF;
+  border-right: groove 1px #fff;
 }
 
 li:active {
@@ -41,7 +41,7 @@ li:active {
   box-shadow: inset 0 1px 1px #666;
 }
 
-li:after {
+li::after {
   background: #eee;
   box-shadow: inset 0 1px 1px #666;
 }
@@ -64,7 +64,6 @@ li:after {
   float: left;
   width: 1.8%;
 }
-
 
 .color {
   display: flex;
